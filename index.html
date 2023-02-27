@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sample</title>
+</head>
+<html>
+
+<body>
+
+  <script>
+    const days = ['월요일', '화요일'];
+    days.push('수요일', '목요일', '금요일', '토요일', '일요일');
+    days.pop();
+    days.pop();
+    days.pop();
+
+    const days2 = ['금요일', '토요일', '일요일'];
+
+    const result = days.concat(days2);
+
+    const 싫은날 = result.splice(0, 2);
+
+    // myPrint(싫은날);
+    // myPrint(result);
+
+    const arr = [1, 2, 3, 4, 5];
+
+    function plus1(a) {
+      return a * 2
+    }
+
+    const output = arr.map(plus1);
+
+    myPrint(output);
+
+    const 학생기록 = [
+      {name: '김', score:80},
+      {name: '이', score:100},
+      {name: '박', score:70},
+      {name: '최', score:90},
+      {name: '송', score:60},
+    ]
+
+ 
+
+    const high = 학생기록.filter(function(x) {
+      if (x.score >= 80) {
+        return true;
+      }
+    })
+
+    console.log(high);
+
+
+
+
+    function myPrint(arr) {
+      const p = document.createElement('p');
+      p.innerHTML = arr;
+      document.body.appendChild(p);
+    }
+
+  </script>
+</body>
+
+</html>

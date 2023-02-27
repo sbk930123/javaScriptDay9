@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sample</title>
+</head>
+<html>
+
+<body>
+
+  <script>
+    // 디스트럭처링 Destructuring (비구조화, 파괴)
+    const arr = [1, 2, 3];
+    // const a = arr[0];
+    // const b = arr[1];
+    // const c = arr[2];
+    const [a, b, c] = arr;
+    const [x, , z] = arr;
+    const [x1, ...y1] = arr;
+
+    console.log(x1, y1);
+
+    const obj = {
+      name: 'smith',
+      age: 25
+    }
+
+    const { name, age } = obj;
+
+    console.log(age, name);
+
+    
+
+    
+
+
+
+    function myPrint(arr) {
+      const p = document.createElement('p');
+      p.innerHTML = arr;
+      document.body.appendChild(p);
+      console.log(arr);
+    }
+  </script>
+</body>
+
+</html>
